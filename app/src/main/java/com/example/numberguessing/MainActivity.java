@@ -22,10 +22,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        assignNumber();
+
          btnLeft = findViewById(R.id.btnLeft);
          btnRight = findViewById(R.id.btnRight);
          constraintLayout = findViewById(R.id.backgroundView);
+         assignNumber();
          btnLeft.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
